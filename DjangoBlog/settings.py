@@ -104,8 +104,8 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': os.environ.get('DJANGO_MYSQL_DATABASE') or 'djangoblog',
         'USER': os.environ.get('DJANGO_MYSQL_USER') or 'root',
-        'PASSWORD': os.environ.get('DJANGO_MYSQL_PASSWORD') or 'djangoblog_123',
-        'HOST': os.environ.get('DJANGO_MYSQL_HOST') or '127.0.0.1',
+        'PASSWORD': os.environ.get('DJANGO_MYSQL_PASSWORD') or '123456aA',
+        'HOST': os.environ.get('DJANGO_MYSQL_HOST') or '35.241.116.70',
         'PORT': int(
             os.environ.get('DJANGO_MYSQL_PORT') or 3306),
         'OPTIONS': {
@@ -208,7 +208,7 @@ EMAIL_HOST_PASSWORD = os.environ.get('DJANGO_EMAIL_PASSWORD')
 DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
 SERVER_EMAIL = EMAIL_HOST_USER
 # Setting debug=false did NOT handle except email notifications
-ADMINS = [('admin', os.environ.get('DJANGO_ADMIN_EMAIL') or 'admin@admin.com')]
+ADMINS = [('admin', os.environ.get('DJANGO_ADMIN_EMAIL') or 'shaojs1993@163.com')]
 # WX ADMIN password(Two times md5)
 WXADMIN = os.environ.get(
     'DJANGO_WXADMIN_PASSWORD') or '995F03AC401D6CABABAEF756FC4D43C7'
@@ -293,3 +293,5 @@ COMPRESS_JS_FILTERS = [
 MEDIA_ROOT = os.path.join(BASE_DIR, 'uploads')
 MEDIA_URL = '/media/'
 X_FRAME_OPTIONS = 'SAMEORIGIN'
+
+a=1
