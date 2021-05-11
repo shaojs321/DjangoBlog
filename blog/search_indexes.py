@@ -13,8 +13,7 @@
 @time: 2017/1/7 上午12:44
 """
 from haystack import indexes
-from django.conf import settings
-from blog.models import Article, Category, Tag
+from blog.models import Article
 
 
 class ArticleIndex(indexes.SearchIndex, indexes.Indexable):

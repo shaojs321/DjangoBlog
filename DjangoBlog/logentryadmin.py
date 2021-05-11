@@ -15,8 +15,6 @@
 from django.contrib.contenttypes.models import ContentType
 from django.urls import reverse, NoReverseMatch
 from django.contrib.admin.models import LogEntry, ADDITION, CHANGE, DELETION
-from django.contrib.auth import get_user_model
-from django.contrib.contenttypes.models import ContentType
 from django.utils.encoding import force_text
 from django.utils.html import escape
 from django.utils.translation import pgettext_lazy, ugettext_lazy as _

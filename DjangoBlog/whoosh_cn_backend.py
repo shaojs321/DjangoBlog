@@ -575,7 +575,7 @@ class WhooshSearchBackend(BaseSearchBackend):
 
         # Deferred models will have a different class ("RealClass_Deferred_fieldname")
         # which won't be in our registry:
-        model_klass = model_instance._meta.concrete_model
+        # model_klass = model_instance._meta.concrete_model
 
         field_name = self.content_field_name
         narrow_queries = set()

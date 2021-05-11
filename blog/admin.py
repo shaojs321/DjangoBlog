@@ -1,6 +1,6 @@
 from django.contrib import admin
 # Register your models here.
-from .models import Article, Category, Tag, Links, SideBar, BlogSettings
+from .models import Article
 from django import forms
 from django.contrib.auth import get_user_model
 from django.utils.translation import ugettext_lazy as _

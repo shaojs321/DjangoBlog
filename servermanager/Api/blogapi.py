@@ -12,8 +12,8 @@
 @file: blogapi.py
 @time: 2017/8/27 上午11:40
 """
-from blog.models import Article, Category, Tag
-from haystack.query import EmptySearchQuerySet, SearchQuerySet
+from blog.models import Article, Category
+from haystack.query import SearchQuerySet
 
 
 class BlogApi():

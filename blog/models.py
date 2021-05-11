@@ -1,5 +1,5 @@
 import logging
-from abc import ABCMeta, abstractmethod, abstractproperty
+from abc import abstractmethod
 
 from django.db import models
 from django.urls import reverse

@@ -20,12 +20,11 @@ from django.contrib.admin.models import LogEntry
 from DjangoBlog.utils import get_current_site
 from django.core.mail import EmailMultiAlternatives
 from django.db.models.signals import post_save
-from django.contrib.auth.signals import user_logged_in, user_logged_out, user_login_failed
+from django.contrib.auth.signals import user_logged_in, user_logged_out
 
-from DjangoBlog.utils import cache, send_email, expire_view_cache, delete_sidebar_cache, delete_view_cache
+from DjangoBlog.utils import cache, expire_view_cache, delete_sidebar_cache, delete_view_cache
 from DjangoBlog.spider_notify import SpiderNotify
 from oauth.models import OAuthUser
-from blog.models import Article, Category, Tag, Links, SideBar, BlogSettings
 from comments.models import Comment
 from comments.utils import send_comment_email
 import _thread

@@ -4,16 +4,16 @@ from django.shortcuts import render
 from urllib.parse import urlparse
 import datetime
 from django.conf import settings
-from django.http import HttpResponse, HttpResponseRedirect
+from django.http import HttpResponseRedirect
 from django.contrib.auth import get_user_model
 from .models import OAuthUser
 from django.contrib.auth import login
 from django.shortcuts import get_object_or_404
-from django.views.generic import FormView, RedirectView
+from django.views.generic import FormView
 from oauth.forms import RequireEmailForm
 from django.urls import reverse
 from django.db import transaction
-from DjangoBlog.utils import send_email, get_md5, save_user_avatar
+from DjangoBlog.utils import send_email, get_md5
 from DjangoBlog.utils import get_current_site
 from django.core.exceptions import ObjectDoesNotExist
 from django.http import HttpResponseForbidden

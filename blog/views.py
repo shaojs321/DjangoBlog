@@ -7,7 +7,7 @@ from django.views.generic.list import ListView
 from django.views.generic.detail import DetailView
 from django.conf import settings
 from django import forms
-from django.http import HttpResponse, HttpResponseRedirect, HttpResponseForbidden
+from django.http import HttpResponse, HttpResponseForbidden
 from django.views.decorators.csrf import csrf_exempt
 from django.contrib.auth.decorators import login_required
 from DjangoBlog.utils import cache, get_md5, get_blog_setting
@@ -116,7 +116,7 @@ class ArticleDetailView(DetailView):
         return obj
 
     def get_context_data(self, **kwargs):
-        articleid = int(self.kwargs[self.pk_url_kwarg])
+        # articleid = int(self.kwargs[self.pk_url_kwarg])
         comment_form = CommentForm()
         user = self.request.user
         # 如果用户已经登录，则隐藏邮件和用户名输入框

@@ -1,6 +1,5 @@
 from django.test import Client, RequestFactory, TestCase
 from blog.models import Article, Category, Tag, SideBar, Links
-from django.contrib.auth import get_user_model
 from DjangoBlog.utils import get_current_site, get_md5
 from blog.forms import BlogSearchForm
 from django.core.paginator import Paginator
@@ -21,7 +20,7 @@ class ArticleTest(TestCase):
         self.factory = RequestFactory()
 
     def test_validate_article(self):
-        site = get_current_site().domain
+        # site = get_current_site().domain
         user = BlogUser.objects.get_or_create(
             email="liangliangyy@gmail.com",
             username="liangliangyy")[0]

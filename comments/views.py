@@ -1,5 +1,3 @@
-from django.shortcuts import render
-
 # Create your views here.
 from .models import Comment
 from blog.models import Article
@@ -24,7 +22,7 @@ class CommentPostView(FormView):
     def form_invalid(self, form):
         article_id = self.kwargs['article_id']
         article = Article.objects.get(pk=article_id)
-        u = self.request.user
+        # u = self.request.user
 
         if self.request.user.is_authenticated:
             form.fields.update({

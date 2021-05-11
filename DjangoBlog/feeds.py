@@ -15,7 +15,6 @@
 
 from django.contrib.syndication.views import Feed
 from blog.models import Article
-from django.conf import settings
 from django.utils.feedgenerator import Rss201rev2Feed
 from DjangoBlog.utils import CommonMarkdown
 from django.contrib.auth import get_user_model

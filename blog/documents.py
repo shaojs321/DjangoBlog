@@ -12,8 +12,8 @@
 """
 from elasticsearch_dsl.connections import connections
 import time
-from blog.models import Article, Category, Tag
-from elasticsearch_dsl import Document, Date, Integer, Long, Keyword, Text, Object, Boolean
+from blog.models import Article
+from elasticsearch_dsl import Document, Date, Integer, Long, Text, Object
 
 from django.conf import settings
 

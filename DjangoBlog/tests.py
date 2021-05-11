@@ -13,13 +13,8 @@
 @time: 2017/10/25 下午10:16
 """
 
-from django.test import Client, RequestFactory, TestCase
-from blog.models import Article, Category, Tag
-from django.contrib.auth import get_user_model
-from DjangoBlog.utils import get_current_site
-from django.urls import reverse
-import datetime
-from DjangoBlog.utils import *
+from django.test import TestCase
+from DjangoBlog.utils import get_md5, CommonMarkdown, parse_dict_to_url, BlogMarkDownRenderer
 
 
 class DjangoBlogTest(TestCase):
